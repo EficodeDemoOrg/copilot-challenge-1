@@ -1,0 +1,17 @@
+services:
+  db:
+    image: mysql:8
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=postgres
+      - MYSQL_USER=postgres
+      - MYSQL_PASSWORD=postgres
+      - MYSQL_DATABASE=library_app
+    volumes:
+      - library_app_mysql_data:/var/lib/mysql
+      - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+    restart: unless-stopped
+
+volumes:
+  library_app_mysql_data:
