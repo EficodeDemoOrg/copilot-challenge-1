@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.add-todo-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.todo-list-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #333;
+}
+
+.todo-item.home {
+    border-left-color: #4CAF50;  /* Green */
+}
+
+.todo-item.work {
+    border-left-color: #2196F3;  /* Blue */
+}
+
+.todo-item.hobbies {
+    border-left-color: #FF9800;  /* Orange */
+}
+
+.todo-content {
+    flex-grow: 1;
+}
+
+.todo-category {
+    margin-left: 10px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: white;
+}
+
+.todo-category.home {
+    background-color: #4CAF50;  /* Green */
+}
+
+.todo-category.work {
+    background-color: #2196F3;  /* Blue */
+}
+
+.todo-category.hobbies {
+    background-color: #FF9800;  /* Orange */
+}
+
+.delete-btn {
+    background-color: #f44336;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
